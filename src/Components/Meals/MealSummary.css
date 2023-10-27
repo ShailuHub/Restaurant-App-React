@@ -1,0 +1,42 @@
+main {
+  background-color: #0e1630;
+  position: relative;
+}
+
+.section-meal-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 6.2rem;
+  padding: 2rem;
+}
+
+.section-meal-subheading {
+  text-align: center;
+}
+
+.section-meal-heading {
+  font-size: 2.5rem;
+  color: var(--white-color);
+  margin: 4rem 0;
+  text-align: center;
+  letter-spacing: 0.2rem;
+}
+
+.section-meal-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.8rem;
+}
+
+.section-meal-subheading {
+  font-size: 4rem;
+  color: var(--white-color);
+  text-transform: uppercase;
+  word-spacing: 0.8rem;
+  letter-spacing: 0.3rem;
+}
+
+.section-meal-subheading span {
+  color: var(--green-color);
+}

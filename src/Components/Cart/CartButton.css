@@ -1,0 +1,30 @@
+.cart-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1.5rem 2rem;
+  border: none;
+  background-color: var(--secondary-color);
+  border-radius: 3rem;
+  font-size: 1.8rem;
+  box-shadow: var(--btn-boxshadow);
+  color: var(--white-color);
+}
+
+.cart-btn span {
+  font-size: 2.2rem;
+}
+
+.cart-btn span:last-child {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--white-color);
+  width: 2.8rem;
+  height: 2.8rem;
+  border-radius: 50%;
+  color: black;
+  font-weight: 600;
+  padding: 0.8rem;
+}

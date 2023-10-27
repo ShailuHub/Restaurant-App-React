@@ -1,0 +1,12 @@
+.section-navbar {
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: var(--white-color);
+}
+
+.section-navbar .container {
+  display: flex;
+  padding: 1.8rem;
+  justify-content: space-between;
+  align-items: center;
+}

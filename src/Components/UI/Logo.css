@@ -1,0 +1,21 @@
+.logo-container {
+  letter-spacing: 0.2rem;
+  word-spacing: 0.02rem;
+  text-transform: uppercase;
+  padding: 0.2rem 0.7rem 0.2rem 0;
+  font-size: 2.8rem;
+  border: 0.3rem solid black;
+  box-shadow: var(--btn-boxshadow);
+}
+
+.logo-left-part {
+  background-color: var(--);
+  background-color: var(--secondary-color);
+  padding: 0.3rem 0.8rem;
+  color: var(--white-color);
+}
+
+.logo-right-part {
+  font-weight: 600;
+  background-color: var(--);
+}
