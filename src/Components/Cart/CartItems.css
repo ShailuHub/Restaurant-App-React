@@ -1,0 +1,54 @@
+.cart-list-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  align-items: center;
+}
+
+.cart-list-container img {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 1rem;
+}
+
+.cart-list-form {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 2rem;
+
+  & p {
+    font-size: 2rem;
+    color: var(--white-color);
+  }
+}
+
+.cart-list-name p {
+  font-size: 2.5rem;
+  color: var(--green-color);
+  letter-spacing: 0.2rem;
+}
+
+.cart-total-price {
+  display: flex;
+  justify-content: space-between;
+  font-size: 2.5rem;
+  align-items: center;
+  color: var(--white-color);
+}
+
+.cart-list-form-input,
+.cart-list-name {
+  display: flex;
+  justify-content: space-between;
+}
+
+.remove-item-btn {
+  padding: 0.8rem;
+  background-color: transparent;
+  color: rgb(220, 53, 69);
+  font-size: 2rem;
+  border: none;
+  cursor: pointer;
+  letter-spacing: 0.2rem;
+}

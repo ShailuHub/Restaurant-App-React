@@ -24,7 +24,7 @@ const MealSummary = () => {
           </div>
           <div className="section-meal-image">
             <figure>
-              <img src="./assests/litti-choka.png" alt="meal section image" />
+              <img src="./assests/delievry-boy.png" alt="meal section image" />
             </figure>
           </div>
         </div>

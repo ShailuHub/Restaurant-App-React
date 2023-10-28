@@ -1,6 +1,5 @@
 main {
   background-color: #0e1630;
-  position: relative;
 }
 
 .section-meal-container {
@@ -27,6 +26,7 @@ main {
   width: 100%;
   height: auto;
   border-radius: 0.8rem;
+  transform: scaleX(-1);
 }
 
 .section-meal-subheading {

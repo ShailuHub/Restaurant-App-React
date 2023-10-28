@@ -1,0 +1,45 @@
+.cart-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: auto;
+  height: auto;
+  gap: 2rem;
+  background-color: rgb(26, 37, 70);
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 8px;
+  padding: 2rem;
+  border-radius: 0.8rem;
+}
+
+.cart-container p {
+  font-size: 3rem;
+  color: var(--white-color);
+  word-spacing: 0.2rem;
+  letter-spacing: 0.2rem;
+  text-align: center;
+  & span {
+    color: var(--green-color);
+  }
+}
+
+.cart-container p button {
+  font-size: 3rem;
+  padding: 0.6rem 1rem;
+  border: 0.2rem solid transparent;
+  float: right;
+  color: var(--white-color);
+  background-color: rgb(26, 37, 70);
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 8px;
+  border-radius: 0.8rem;
+  cursor: pointer;
+}
+
+.place-order-btn {
+  font-size: 2rem;
+  padding: 1rem 0;
+  border-radius: 0.5rem;
+  background-color: var(--green-color);
+  font-weight: 600;
+  color: var(--bg-color);
+  cursor: pointer;
+}

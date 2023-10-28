@@ -3,7 +3,7 @@ import Logo from "../UI/Logo";
 import "./Header.css";
 import CartButton from "../Cart/CartButton";
 
-function Header() {
+const Header = (props) => {
   return (
     <React.Fragment>
       <header className="section-navbar">
@@ -13,12 +13,12 @@ function Header() {
           </div>
           {/* <nav className="navbar">nav item</nav> */}
           <div className="navbar-cart">
-            <CartButton />
+            <CartButton onClick={props.onShowCart} />
           </div>
         </div>
       </header>
     </React.Fragment>
   );
-}
+};
 
 export default Header;

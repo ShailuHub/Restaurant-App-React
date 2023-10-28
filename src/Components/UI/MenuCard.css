@@ -1,0 +1,83 @@
+.menu-container {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  width: 40rem;
+  height: auto;
+  background-color: rgb(26, 37, 70);
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 8px;
+  margin-top: 5rem;
+  gap: 2rem;
+  letter-spacing: 0.2rem;
+  border-radius: 0.5rem;
+}
+
+.menu-container img {
+  width: 100%;
+  height: 30rem;
+  margin-bottom: 2rem;
+  border-radius: 0.8rem;
+}
+
+.menu-content p {
+  font-size: 2.5rem;
+  color: var(--green-color);
+  padding: 0.5rem 0;
+  text-align: center;
+}
+
+.menu-content p:last-child,
+.menu-description p {
+  font-size: 1.8rem;
+  color: #f2f2f3;
+  text-align: left;
+}
+
+.menu-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--green-color);
+  font-size: 2rem;
+}
+
+.menu-order-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-input {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.form-input button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  font-size: 2rem;
+  color: var(--white-color);
+  padding: 0.5rem;
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+}
+
+.menu-order-form label {
+  color: var(--white-color);
+  font-size: 2rem;
+}
+
+.menu-order-form input {
+  border: none;
+  outline: none;
+  width: 3rem;
+  min-width: 3rem;
+  height: 3rem;
+  font-size: 1.8rem;
+  padding: 0.2rem;
+  text-align: center;
+}
