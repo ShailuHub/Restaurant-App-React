@@ -1,18 +1,26 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./MenuCard.css";
 import QuantityForm from "./QuantityForm";
 
 const MenuCard = (props) => {
-  const { mealName, about, description, imageUrl, orderNo, price } =
+  const imageRef = useRef();
+  const priceRef = useRef();
+  const mealNameRef = useRef();
+  const { mealName, about, description, imageUrl, orderNo, price, quantity } =
     props.details;
+  const allMealRef = {
+    imageRef: imageRef,
+    priceRef: priceRef,
+    mealNameRef: mealNameRef,
+  };
   return (
     <React.Fragment>
       <div className="menu-container">
         <figure>
-          <img src={imageUrl} alt="menu item image" />
+          <img ref={imageRef} src={imageUrl} alt="menu item image" />
         </figure>
         <div className="menu-content">
-          <p>{mealName}</p>
+          <p ref={mealNameRef}>{mealName}</p>
           <p>{about}</p>
         </div>
         <div className="menu-description">
@@ -20,9 +28,15 @@ const MenuCard = (props) => {
         </div>
         <div className="menu-price">
           <p>ORDER NO: {orderNo}</p>
-          <p>Rs. {price}</p>
+          <p ref={priceRef}>Rs. {price}</p>
         </div>
-        <QuantityForm buttonRequired={true} quantity={0} />
+        <QuantityForm
+          buttonRequired={true}
+          quantity={quantity || 1}
+          onShowCart={props.onShowCart}
+          onAddToCart={props.onAddToCart}
+          allMealRef={allMealRef}
+        />
       </div>
     </React.Fragment>
   );

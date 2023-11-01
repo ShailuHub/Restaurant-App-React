@@ -43,3 +43,11 @@
   color: var(--bg-color);
   cursor: pointer;
 }
+
+.cart-item-list-container {
+  display: flex;
+  flex-direction: column;
+  max-height: 50rem;
+  gap: 3rem;
+  overflow-y: scroll;
+}

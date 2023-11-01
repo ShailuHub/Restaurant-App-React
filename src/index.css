@@ -62,3 +62,25 @@ li {
   --btn-hover-background-color: #003b99;
   --btn-boxshadow: rgba(255, 255, 255, 0.8) 0px 0px 10px;
 }
+
+/* Your existing CSS rules */
+
+/* Custom Scrollbar */
+/* For webkit-based browsers */
+/* You can customize these properties to fit your design */
+
+/* Track (the area the scrollbar moves in) */
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+/* Handle (the draggable part of the scrollbar) */
+::-webkit-scrollbar-thumb {
+  background: #01d293; /* Color of the handle */
+  border-radius: 6px; /* Rounded handle */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #000a19; /* Change color on hover */
+}
